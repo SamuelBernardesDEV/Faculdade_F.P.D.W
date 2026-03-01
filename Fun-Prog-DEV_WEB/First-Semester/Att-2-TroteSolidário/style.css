@@ -1,0 +1,151 @@
+:root {
+    --font-title: "Luckiest Guy", cursive;
+    --uni-blue: #344f8a;
+    --oswald: "Oswald", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s, smooth;
+}
+
+body {
+    background-color: var(--uni-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Section */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    padding: 5%;
+    background-color: #fff;
+    border-radius: 2rem;
+    height: auto;
+    width: 70vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Header Section */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.trote-title {
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.8rem, 6vw, 5rem);
+    color: var(--uni-blue);
+}
+
+.trote-subtitle {
+    font-family: var(--oswald);
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    color: rgba(150, 150, 150, .8);
+    margin-top: 2%;
+}
+
+/* Content Section */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10% 10%;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.image-container .img {
+    width: 50%;
+
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.list-container .list li{
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-bottom: 10%;
+    color: rgba(50, 50, 50, 0.9);
+    border-bottom: 1px solid rgba(150, 150, 150, .2) ;
+    padding: 1rem;
+}
+
+.desc-title {
+    margin: 5%;
+}
+
+.desc-title h2{
+    font-family: var(--font-title);
+    font-weight: 200;
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 2rem);
+    color: rgba(150, 150, 150, .9);
+}
+
+/* Botão */
+
+.btn-submit{
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 30%;
+    font-size: clamp(0.9rem, 2vw, 3rem);
+    color: #fff;
+    background-color: orangered;
+    border: none;
+    margin-bottom: 5%;
+}
+
+.btn-submit:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+.ppp{
+    color: rgba(150, 150, 150, .9)
+}
+
+/* Media Querry */
+
+@media (max-width: 800px) {
+    img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 100%;
+    }
+}
